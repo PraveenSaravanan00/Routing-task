@@ -1,0 +1,70 @@
+.outline{
+    background-color: rgb(205, 204, 204);
+    padding: 0.5%;
+}
+.container1{
+padding: 0.5%;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+.container3{
+display: flex;
+justify-content: end;
+}
+.button{
+    display: flex;
+    
+    justify-content: start;
+   
+  }
+  .Adduserbutton{
+    display: flex;
+    
+    justify-content: end;
+    
+  }
+
+  .imageGap{
+   display: flex;
+   justify-content: center;
+   padding: 10px 0px;
+  }
+
+.title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 0.5%;
+  font-weight: bold;
+}
+
+.registerbutton{
+ color:white !important;
+  background-color: rgb(17, 201, 238) !important;
+}
+.card{
+  width: 70%;
+
+}
+.editbutton{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+img{
+  width: 90%;
+  height: 170px;
+}
+.personname{
+  font-size: large;
+  font-weight: bold;
+}
+.personJob{
+  font-size: medium;
+
+}
+.cursor{
+  cursor: pointer;
+}

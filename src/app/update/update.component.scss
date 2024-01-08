@@ -1,0 +1,74 @@
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.outline{
+    padding: 1%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1%;
+}
+.width{
+    width: 100%
+  
+  }
+.boxsize{
+    display: flex;
+    justify-content: center;
+}
+  .centertext{
+    display: flex;
+    justify-content: center;
+    font-size:medium;
+    font-weight: bold;
+    padding: 5%;
+  }
+  .registerImage{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 50%
+  }
+  .form{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+  }
+.registerbutton{
+    padding: 25px !important;
+    color: white !important;
+    background-color: rgb(16, 158, 16) !important;
+}
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 1px;
+  }
+  .gender{
+    display: flex;
+    justify-content: center;
+  }
+  #example-radio-group-label{
+    font-weight: bold;
+  }
+  .validationError{
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: medium;
+    padding-bottom: 10px;
+  }
+  .backbutton{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    background-color: rgb(17, 201, 238) !important;
+}

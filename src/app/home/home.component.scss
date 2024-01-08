@@ -1,0 +1,33 @@
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 2%;
+    color: white;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8998b9;
+}
+
+.padding{
+    padding: 1% 2% 1% 2%;
+}
+.outline{
+    background-color:#22324c;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 90%;
+    height: 175px;
+  }
+  .outline{
+    width: 100%;
+  }
+.color{
+    background-color:#8998b9 ;
+}

@@ -1,0 +1,54 @@
+<div class="outline">
+    <div class="title">
+      <h1>Update User Form</h1>
+    </div>
+    <div>
+      <button class="backbutton" mat-raised-button (click)="back()">Back</button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="center">
+      <div class="form">
+        <div>
+          <div class="centertext">Name</div>
+          <div class="boxsize">
+            <mat-form-field class="width">
+              <input matInput placeholder="Enter Name" [(ngModel)]="Name">
+            </mat-form-field>
+          </div>
+  <div class="validationError" *ngIf="validationName.length">{{validationName}}</div>
+        </div>
+        <div>
+          <div class="centertext">Profile Image URL</div>
+          <div class="boxsize">
+            <mat-form-field class="width">
+              <input matInput placeholder="Enter the URL" [(ngModel)]="url">
+            </mat-form-field>
+          </div>
+          <div class="validationError" *ngIf="validationurl.length">{{validationurl}}</div>
+        </div>
+        <div>
+          <div class="centertext">Job</div>
+          <div class="boxsize">
+            <mat-form-field class="width">
+              <input matInput placeholder="Enter Job" [(ngModel)]="job">
+            </mat-form-field>
+          </div>
+          <div class="validationError" *ngIf="validationJob.length">{{validationJob}}</div>
+        </div>
+        <div class="gender" >
+            <div>
+                <mat-radio-group aria-label="Select an option" [(ngModel)]="gender">
+                    <label id="example-radio-group-label">Gender</label>
+                    <mat-radio-button value="Male">Male</mat-radio-button>
+                    <mat-radio-button value="Female">Female</mat-radio-button>
+                  </mat-radio-group>
+            </div>
+        </div>
+        <div class="validationError" *ngIf="validationGender.length">{{validationGender}}</div>
+        <div class="button">
+          <button mat-raised-button class="registerbutton" (click)="update()"  >submit</button>
+        </div>  
+    </div> 
+    </div>
+    <mat-divider></mat-divider>
+  </div>

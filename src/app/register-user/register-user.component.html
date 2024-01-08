@@ -1,0 +1,56 @@
+<div class="outline">
+  <div class="title">
+    <h1>Register User</h1>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="center">
+    <div class="form">
+      <div class="centertext">
+        <img mat-card-image src='https://www.w3schools.com/howto/img_avatar.png' alt="img" class="registerImage">
+      </div>
+      <div>
+        <div class="centertext">First Name</div>
+        <div class="boxsize">
+          <mat-form-field class="width">
+            <input matInput placeholder="Enter First Name" [(ngModel)]="firstName">
+          </mat-form-field>
+        </div>
+        <div class="validationError" *ngIf="validationFirstName.length">{{validationFirstName}}</div>
+      </div>
+      <div>
+        <div class="centertext">Last Name</div>
+        <div class="boxsize">
+          <mat-form-field class="width">
+            <input matInput placeholder="Enter Last Name" [(ngModel)]="lastName">
+          </mat-form-field>
+        </div>
+        <div class="validationError" *ngIf="validationLastName.length">{{validationLastName}}</div>
+      </div>
+      <div>
+        <div class="centertext">Email Address</div>
+        <div class="boxsize">
+          <mat-form-field class="width">
+            <input matInput type="email"  placeholder="Enter Email Address" [(ngModel)]="email">
+          </mat-form-field>
+        </div>
+        <div class="validationError" *ngIf="validationEmail.length">{{validationEmail}}</div>
+      </div>
+      <div>
+        <div class="centertext">Password</div>
+        <div class="boxsize">
+          <mat-form-field class="width">
+            <input matInput type="password" placeholder="Enter Password" [(ngModel)]="password">
+          </mat-form-field>
+        </div>
+        <div class="validationError" *ngIf="validationPassword.length">{{validationPassword}}</div>
+      </div>
+      <div class="button">
+        <button mat-raised-button class="registerbutton" (click)="registerDetails()">Register</button>
+      </div>
+      <div class="login">
+        Already have an account? <a (click)="login()"> <u class="logincolor"> Login</u></a>
+      </div>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+</div>

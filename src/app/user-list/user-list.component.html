@@ -1,0 +1,55 @@
+<div class="outline">
+  <div class="container1">
+    <div class="title">
+      <h1>User List</h1>
+    </div>
+    <div>
+      <div class="button">
+        <button mat-raised-button class="registerbutton" (click)="back()">Back</button>
+      </div>
+    </div>
+    <div>
+      <div class="Adduserbutton">
+        <button mat-raised-button color="primary" (click)="adduser()">Add User</button>
+      </div>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="griditem1">
+      <mat-grid-list cols="4" rowHeight="1:1">
+        <ng-container *ngFor="let item of userDetail">
+          <mat-grid-tile>
+
+            <mat-card class="card">
+              <div (click)="userDetails(item.id)" class="cursor">
+                <div class="imageGap">
+                  <img mat-card-md-image src="{{item.url}} " alt="No-Image">
+                </div>
+                <mat-card-content>
+                  <div class="center">
+                    <div class="personname">{{item.name}}</div>
+                  </div>
+                  <div class="center">
+                    <div class="personJob">{{item.job}}</div>
+                  </div>
+                </mat-card-content>
+              </div>
+              <mat-card-actions class="editbutton">
+                <button mat-raised-button class="registerbutton" (click)="editButton(item.id)">EDIT</button>
+                <button mat-raised-button color="warn" (click)="deleteButton(item.id)">DELETE</button>
+              </mat-card-actions>
+            </mat-card>
+
+          </mat-grid-tile>
+        </ng-container>
+      </mat-grid-list>
+
+    </div>
+  </div>
+  <div class="container3">
+    <div class="button">
+      <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

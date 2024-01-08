@@ -1,0 +1,96 @@
+<div class="outline">
+    <div class="title">
+        <button mat-raised-button color="warn" (click)="logout()">Logout</button>
+        <h1>Home Page</h1>
+        <button mat-raised-button color="primary" (click)="userList()">User List</button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="padding">
+        <mat-card>
+            <div class="details">
+                <div class="padding">
+                    <mat-card class="card">
+                        <mat-card-content>
+                            <div class="center">
+                                <img mat-card-md-image
+
+                                    src="https://images.squarespace-cdn.com/content/v1/5ea237e587e03021f9ef8cc2/1591632715798-GZ810CZ0DMW3J0HD2ODF/Group-members.jpg?format=2500w">
+                            </div>
+
+                            <div class="center">
+                                <h1>Total member</h1>
+                            </div>
+                            <div class="center">
+                                <h3> {{totalMember}} </h3>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="padding">
+                    <mat-card class="card">
+                        <mat-card-content>
+                            <div class="center">
+                                <img mat-card-md-image
+                                    src="https://img.freepik.com/premium-vector/group-men-avatars-characters_24877-23591.jpg?w=1480">
+                            </div>
+                            <div class="center">
+                                <h1>Men</h1>
+                            </div>
+                            <div class="center">
+                                <h3> {{men}} </h3>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="padding">
+                    <mat-card class="card">
+                        <mat-card-content>
+                            <div class="center">
+                                <img mat-card-md-image
+                                    src="https://img.freepik.com/premium-vector/avatar-people-female-group-profile-woman_24877-2632.jpg?w=1380">
+                            </div>
+                            <div class="center">
+                                <h1>Women</h1>
+                            </div>
+                            <div class="center">
+                                <h3> {{women}} </h3>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+
+        </mat-card>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="padding">
+  
+        <mat-card>
+                    <mat-grid-list cols="4" rowHeight="1:1" class="color">
+                        <ng-container *ngFor="let item of userkeyvalue; let i=index">
+                            <mat-grid-tile>
+                                <mat-card class="card">
+                                    <mat-card-content>
+                                        <div class="center">
+                                            <img mat-card-md-image
+                                                src="https://png.pngitem.com/pimgs/s/508-5087146_circle-hd-png-download.png">
+                                        </div>
+                                        <div class="center">
+                                            <h1>{{item}}</h1>
+                                        </div>
+                                        <div class="center">
+                                            <h3>{{roleDetails[item]}}</h3>
+                                        </div>
+                                    </mat-card-content>
+                                </mat-card>
+                            </mat-grid-tile>
+                        </ng-container>
+                    </mat-grid-list>
+                
+            
+        </mat-card>
+ 
+    </div>
+</div>

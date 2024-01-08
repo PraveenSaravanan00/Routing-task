@@ -1,0 +1,65 @@
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.outline{
+    padding: 1%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1%;
+}
+.width{
+    width: 50%
+  
+  }
+.boxsize{
+    display: flex;
+    justify-content: center;
+}
+  .centertext{
+    display: flex;
+    justify-content: center;
+    font-size:medium;
+    font-weight: bold;
+    padding: 2%;
+  }
+  .registerImage{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 50%
+  }
+  .form{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+.registerbutton{
+    padding: 25px !important;
+    color: white !important;
+    background-color: rgb(16, 158, 16) !important;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 2%;
+}
+
+.logincolor{
+    color: blue;
+    cursor: pointer;
+}
+.validationError{
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: medium;
+}

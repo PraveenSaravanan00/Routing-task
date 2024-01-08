@@ -1,0 +1,38 @@
+<div class="outline">
+    <div class="title">
+      <h1>Login User</h1>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="center">
+      <div class="form">
+        <div class="centertext">
+          <img mat-card-image src='https://www.w3schools.com/howto/img_avatar.png' alt="img" class="registerImage">
+        </div>
+        <div>
+          <div class="centertext">Email Address</div>
+          <div class="boxsize">
+            <mat-form-field class="width">
+              <input matInput placeholder="Enter Email Address" type="email" [(ngModel)]="email">
+            </mat-form-field>
+          </div>
+          <div class="validationError" *ngIf="validationEmail.length">{{validationEmail}}</div>
+        </div>
+        <div>
+          <div class="centertext">Password</div>
+          <div class="boxsize">
+            <mat-form-field class="width">
+              <input matInput placeholder="Enter Password" type="password" [(ngModel)]="password">
+            </mat-form-field>
+          </div>
+          <div class="validationError" *ngIf="validationPassword.length">{{validationPassword}}</div>
+        </div>
+        <div class="button">
+          <button mat-raised-button class="registerbutton" (click)="loginDetails()">Login</button>
+        </div>
+        <div class="login">
+          Don't have an account? <a (click)="register()"> <u class="logincolor"> Register</u></a>
+        </div>
+      </div>
+    </div>
+    <mat-divider></mat-divider>
+  </div>
